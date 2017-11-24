@@ -7,7 +7,7 @@ rpms:	clean package
 
 prepare:
 	mkdir -p BUILD SOURCES SPECS SRPMS RPMS tmp dist emqttd-${EMQ_VERSION}
-	git clone -b package https://github.com/emqtt/emq-relx.git emqttd-${EMQ_VERSION}
+	git clone -b package-iotp https://github.com/sincethen/emq-relx.git emqttd-${EMQ_VERSION}
 	cd emqttd-${EMQ_VERSION} && make
 	rm -rf emqx-${EMQX_VERSION}/deps/gen_rpc/_build/
 	cd ../
